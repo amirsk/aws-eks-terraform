@@ -61,3 +61,11 @@ output "eks_cluster_id" {
 output "node_group_id" {
   value = aws_eks_node_group.eks_node_group.id
 }
+
+output "provider_name" {
+  value = local.provider_name
+}
+
+output "helm_name" {
+  value = helm_release.aws_load_balancer_controller.name
+}
